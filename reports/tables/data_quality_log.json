@@ -1,0 +1,23 @@
+{
+  "raw_rows": 3441,
+  "duplicate_dates_removed": 0,
+  "zero_station_rows_dropped": 12,
+  "calendar_days": 3519,
+  "missing_days_before_imputation": 90,
+  "hampel_flagged_total": 54,
+  "single_station_artefacts_removed": 10,
+  "artefact_dates": [
+    "2015-07-10",
+    "2015-12-08",
+    "2016-01-11",
+    "2016-04-09",
+    "2016-04-17",
+    "2016-12-27",
+    "2018-08-18",
+    "2018-08-21",
+    "2019-05-11",
+    "2019-05-12"
+  ],
+  "days_interpolated": 72,
+  "days_left_missing": 28
+}

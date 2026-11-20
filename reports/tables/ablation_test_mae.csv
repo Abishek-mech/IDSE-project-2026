@@ -1,0 +1,8 @@
+,test_MAE
+all features,11.482
+no pollutant flags,11.473
+no festival flags,11.482
+no calendar/season,11.547
+no rolling stats,11.559
+no event adjustment (base GB),11.482
+train only Jun-2020 onward,11.764

@@ -1,0 +1,72 @@
+{
+  "ARIMA+Fourier": {
+    "order": [
+      2,
+      0,
+      1
+    ]
+  },
+  "Ridge": {
+    "best_params": {
+      "m__alpha": 45.70563099801453
+    },
+    "cv_mae_train": 18.813733286177097
+  },
+  "RandomForest": {
+    "best_params": {
+      "max_depth": 12,
+      "max_features": 0.8791531843584828,
+      "min_samples_leaf": 31
+    },
+    "cv_mae_train": 19.042160974096582
+  },
+  "GB + event adjustment": {
+    "uplift_train_only": {
+      "is_diwali": 54.93463909903182,
+      "is_bhogi": 24.63002990601155
+    },
+    "uplift_train_val": {
+      "is_diwali": 60.10194075291013,
+      "is_bhogi": 18.82545470547036
+    }
+  },
+  "GradientBoosting": {
+    "best_params": {
+      "l2_regularization": 0.40137830238462535,
+      "learning_rate": 0.011841130198891353,
+      "loss": "absolute_error",
+      "max_iter": 373,
+      "max_leaf_nodes": 5,
+      "min_samples_leaf": 25
+    },
+    "cv_mae_train": 18.753167361951046
+  },
+  "selected_model": "GB + event adjustment",
+  "tuned_threshold": 90,
+  "exceedance_test": {
+    "default_100": {
+      "Precision": 0.6944444444444444,
+      "Recall": 0.5319148936170213,
+      "F1": 0.6024096385542169
+    },
+    "tuned_90": {
+      "Precision": 0.7589285714285714,
+      "Recall": 0.551948051948052,
+      "F1": 0.6390977443609023
+    },
+    "persistence_100": {
+      "Precision": 0.6236559139784946,
+      "Recall": 0.6170212765957447,
+      "F1": 0.6203208556149733
+    }
+  },
+  "ablation_test_mae": {
+    "all features": 11.481974183789719,
+    "no pollutant flags": 11.472543216529287,
+    "no festival flags": 11.481974183789719,
+    "no calendar/season": 11.547434986131217,
+    "no rolling stats": 11.558638968369232,
+    "no event adjustment (base GB)": 11.481974183789719,
+    "train only Jun-2020 onward": 11.763808826715886
+  }
+}
